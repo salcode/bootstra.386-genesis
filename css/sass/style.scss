@@ -6,11 +6,16 @@
 ------------------------------------------------------------ */
 @import "supporting/variables";
 
-/* Bootstrap Base 2.3.2
+/* Bootstrap Base 2.3.2 Variables
+------------------------------------------------------------ */
+@import "supporting/bootstrap/_variables";
+@import "supporting/bootstrap/_mixins";
+
+/* Bootstra.386 Base
 ------------------------------------------------------------ */
 @import "supporting/bootstrap";
 
-/* Bootstrap Responsive 2.3.2
+/* Bootstra.386 Responsive
 ------------------------------------------------------------ */
 @import "supporting/bootstrap-responsive";
 
