@@ -7,3 +7,7 @@ Built with
 ----------
 - [BOOTSTRA.386](https://github.com/kristopolous/BOOTSTRA.386), Bootstrap Theme that captures the 1980s
 - [Bootstrap Genesis](https://github.com/salcode/bootstrap-genesis) a Genesis WordPress Starter Child Theme
+
+Screenshot
+----------
+![Screenshot of Bootstra.386 Genesis Child Theme](/screenshot.png?raw=true)
