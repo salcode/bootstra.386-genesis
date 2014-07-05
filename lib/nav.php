@@ -38,7 +38,7 @@ function bsg_nav_menu_args_filter( $args ) {
 
 function bsg_nav_menu_markup_filter( $html, $args ) {
 
-    $output = '<div class="navbar">' .
+    $output = '<div class="navbar navbar-inverse">' .
         '<div class="navbar-inner">' .
             '<div class="container-fluid">';
                 // only include blog name and description in the nav
