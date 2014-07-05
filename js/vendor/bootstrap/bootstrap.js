@@ -1,8 +1,8 @@
 /* ===================================================
- * bootstrap-transition.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#transitions
+ * bootstrap-transition.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#transitions
  * ===================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,10 +58,10 @@
   })
 
 }(window.jQuery);/* ==========================================================
- * bootstrap-alert.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#alerts
+ * bootstrap-alert.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#alerts
  * ==========================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -156,10 +156,10 @@
   $(document).on('click.alert.data-api', dismiss, Alert.prototype.close)
 
 }(window.jQuery);/* ============================================================
- * bootstrap-button.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#buttons
+ * bootstrap-button.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#buttons
  * ============================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -260,10 +260,10 @@
   })
 
 }(window.jQuery);/* ==========================================================
- * bootstrap-carousel.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#carousel
+ * bootstrap-carousel.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#carousel
  * ==========================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -466,10 +466,10 @@
   })
 
 }(window.jQuery);/* =============================================================
- * bootstrap-collapse.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#collapse
+ * bootstrap-collapse.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#collapse
  * =============================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -632,10 +632,10 @@
   })
 
 }(window.jQuery);/* ============================================================
- * bootstrap-dropdown.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#dropdowns
+ * bootstrap-dropdown.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#dropdowns
  * ============================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -685,10 +685,6 @@
       clearMenus()
 
       if (!isActive) {
-        if ('ontouchstart' in document.documentElement) {
-          // if mobile we we use a backdrop because click events don't delegate
-          $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on('click', clearMenus)
-        }
         $parent.toggleClass('open')
       }
 
@@ -741,7 +737,6 @@
   }
 
   function clearMenus() {
-    $('.dropdown-backdrop').remove()
     $(toggle).each(function () {
       getParent($(this)).removeClass('open')
     })
@@ -796,15 +791,16 @@
   $(document)
     .on('click.dropdown.data-api', clearMenus)
     .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
+    .on('click.dropdown-menu', function (e) { e.stopPropagation() })
     .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
 }(window.jQuery);
 /* =========================================================
- * bootstrap-modal.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#modals
+ * bootstrap-modal.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#modals
  * =========================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1048,11 +1044,11 @@
 
 }(window.jQuery);
 /* ===========================================================
- * bootstrap-tooltip.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#tooltips
+ * bootstrap-tooltip.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#tooltips
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ===========================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1409,10 +1405,10 @@
 
 }(window.jQuery);
 /* ===========================================================
- * bootstrap-popover.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#popovers
+ * bootstrap-popover.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#popovers
  * ===========================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1523,10 +1519,10 @@
 
 }(window.jQuery);
 /* =============================================================
- * bootstrap-scrollspy.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#scrollspy
+ * bootstrap-scrollspy.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#scrollspy
  * =============================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1684,10 +1680,10 @@
   })
 
 }(window.jQuery);/* ========================================================
- * bootstrap-tab.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#tabs
+ * bootstrap-tab.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#tabs
  * ========================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1827,10 +1823,10 @@
   })
 
 }(window.jQuery);/* =============================================================
- * bootstrap-typeahead.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#typeahead
+ * bootstrap-typeahead.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#typeahead
  * =============================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -2162,10 +2158,10 @@
 
 }(window.jQuery);
 /* ==========================================================
- * bootstrap-affix.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#affix
+ * bootstrap-affix.js v2.3.1
+ * http://twitter.github.com/bootstrap/javascript.html#affix
  * ==========================================================
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2012 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -2277,4 +2273,114 @@
   })
 
 
-}(window.jQuery);
+}(window.jQuery);self._386 = self._386 || {};
+
+$(function(){
+  var character = { height: 20, width: 12.4 };
+
+  function scrollLock() {
+    var last = 0;
+    $(window).bind('scroll', function(e) {
+      var func, off = $(window).scrollTop();
+
+      console.log(off, last, off < last ? "up" : "down");
+
+      // this determines whether the user is intending to go up or down.
+      func = off < last ? "floor" : "ceil";
+
+      // make sure we don't run this from ourselves
+      if(off % character.height === 0) {
+        return;
+      }
+      last = off;
+
+      window.scrollTo(
+        0,
+        Math[func](off / character.height) * character.height
+      );
+
+    }); 
+  }  
+
+  function loading() {
+
+    if(_386.fastLoad) {
+      document.body.style.visibility='visible';
+      return;
+    }
+
+    var
+      onePass = _386.onePass,
+      speedFactor = 1 / (_386.speedFactor || 1) * 165000;
+      wrap = document.createElement('div'),
+      bar = wrap.appendChild(document.createElement('div')),
+
+      cursor = document.createElement('div'),
+      // If the user specified that the visibility is hidden, then we
+      // start at the first pass ... otherwise we just do the 
+      // cursor fly-by
+      pass = ($(document.body).css('visibility') == 'visible') ? 1 : 0,
+      height = $(window).height(),
+      width = $(window).width(),
+
+      // this makes the loading of the screen proportional to the real-estate of the window.
+      // it helps keep the cool sequence there while not making it waste too much time.
+      rounds = (height * width / speedFactor),
+      column = width, row = height - character.height;
+      
+    wrap.id = "wrap386";
+    bar.id = "bar386";
+    cursor.id = "cursor386";
+
+    cursor.innerHTML = bar.innerHTML = '&#9604;';
+
+    // only inject the wrap if the pass is 0
+    if(pass === 0) {
+      document.body.appendChild(wrap);
+      document.body.style.visibility='visible';
+    } else {
+      document.body.appendChild(cursor);
+      rounds /= 2;
+      character.height *= 4;
+    }
+
+    var ival = setInterval(function(){
+      for(var m = 0; m < rounds; m++) {
+        column -= character.width;
+
+        if(column <= 0) {
+          column = width;
+          row -= character.height;
+        }
+        if(row <= 0) {
+          pass++;
+          row = height - character.height;
+
+          if(pass == 2) {
+            document.body.removeChild(cursor);
+            clearInterval(ival);
+          } else {
+            wrap.parentNode.removeChild(wrap);
+            if(onePass) {
+              clearInterval(ival);
+            } else {
+              document.body.appendChild(cursor);
+              rounds /= 2;
+              character.height *= 4;
+            }
+          }
+        }
+
+        if(pass === 0) {
+          bar.style.width = column + "px";
+          wrap.style.height = row + "px";
+        } else {
+          cursor.style.right = column + "px";
+          cursor.style.bottom = row + "px";
+        }
+      }
+    }, 1);
+  }
+  loading();
+});
+
