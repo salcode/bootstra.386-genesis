@@ -12,6 +12,10 @@
     -webkit-box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
     -moz-box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
     box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
+    width:85%;
+    &.widget_search {
+        overflow: hidden;
+    }
 }
 .widget-wrap {
     color: #000;
