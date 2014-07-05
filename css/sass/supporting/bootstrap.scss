@@ -5821,15 +5821,17 @@ a.badge:focus {
 }
 
 .hero-unit {
-  padding: 60px 74.4px 40px;
+  padding: 16px 20.8px;
   margin-bottom: 20px;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 20px;
   color: #ffffff;
-  background-color: #00aa00;
+  background-color: #00aaaa;
+  border: 4px double #ffffff;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  box-shadow: 0 0 0 4px #00aaaa;
 }
 
 .hero-unit h1 {
@@ -5838,6 +5840,7 @@ a.badge:focus {
   line-height: 1;
   color: #ffffff;
   text-align: center;
+  text-decoration: blink;
 }
 
 .hero-unit li {
@@ -5866,4 +5869,33 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+#wrap386 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background: #000084;
+}
+
+#bar386 {
+  float: right;
+  width: 100%;
+  height: 20px;
+  margin-top: -20px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000084;
+}
+
+#cursor386 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  font-weight: bold;
+  color: #ffffff;
 }
