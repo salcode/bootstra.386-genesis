@@ -2,8 +2,7 @@
 ------------------------------------------------------------ */
 
 .hero-unit {
-    @media (max-width: 767px) {
-        padding: 20px;
-        h1 { font-size:40px; }
+    .site-description {
+        white-space: normal;
     }
 }
