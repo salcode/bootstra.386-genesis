@@ -3,9 +3,20 @@
 
 // default widget styles
 .widget {
-    margin-bottom:40px;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 5px 40px;
+    margin-left: -5px;
+    background: #bbb;
+    border: 2px solid #000000;
+    -webkit-box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
+    -moz-box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
+    box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
 }
-.widget-wrap>ul {
-    margin-left:0;
+.widget-wrap {
+    color: #000;
+    &>ul {
+        margin-left:0;
+    }
 }
 
