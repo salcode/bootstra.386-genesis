@@ -2275,7 +2275,7 @@
 
 }(window.jQuery);self._386 = self._386 || {};
 
-$(function(){
+(function($){
   var character = { height: 20, width: 12.4 };
 
   function scrollLock() {
@@ -2382,5 +2382,5 @@ $(function(){
     }, 1);
   }
   loading();
-});
+})(jQuery);
 
